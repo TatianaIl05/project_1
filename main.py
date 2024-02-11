@@ -1,0 +1,17 @@
+import turtle as t
+def rhombus(x, y, a):
+    t.fillcolor('green')
+    t.begin_fill()
+    t.color('green')
+    t.up()
+    t.setposition(x, y)
+    t.down()
+    t.forward(a)
+    t.right(135)
+    t.forward(a)
+    t.right(45)
+    t.forward(a)
+    t.right(135)
+    t.forward(a)
+    t.right(45)
+    t.end_fill()
