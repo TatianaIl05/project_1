@@ -44,4 +44,4 @@ def star(x, y, a):
         t.forward(a)
         t.right(144)
     t.end_fill()
-star(10, 20, 50)
+
