@@ -31,3 +31,17 @@ def rectangle(x, y, a, b):
     t.forward(b)
     t.right(90)
     t.end_fill()
+def star(x, y, a):
+    t.fillcolor('purple')
+    t.begin_fill()
+    t.color('purple')
+    t.up()
+    t.setposition(x, y)
+    t.down()
+    for i in range (5):
+        t.forward(a)
+        t.left(72)
+        t.forward(a)
+        t.right(144)
+    t.end_fill()
+star(10, 20, 50)
