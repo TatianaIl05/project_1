@@ -50,7 +50,7 @@ def square(x,y,a):
     t.color('red')
     t.up()
     t.setposition(x,y)
-    t.down
+    t.down()
     for i in range(4):
         t.forward(a)
         t.left(90)
@@ -68,4 +68,13 @@ def triangle(x,y,a,b):
     t.right(45)
     t.forward(b)
     t.right(45)
+    t.end_fill()
+def round(x, y, r):
+    t.fillcolor('red')
+    t.begin_fill()
+    t.color('red')
+    t.up()
+    t.setposition(x, y)
+    t.down()
+    t.circle(r)
     t.end_fill()
