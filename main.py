@@ -44,4 +44,28 @@ def star(x, y, a):
         t.forward(a)
         t.right(144)
     t.end_fill()
-
+def square(x,y,a):
+    t.fillcolor('red')
+    t.begin_fill()
+    t.color('red')
+    t.up()
+    t.setposition(x,y)
+    t.down
+    for i in range(4):
+        t.forward(a)
+        t.left(90)
+    t.end_fill()
+def triangle(x,y,a,b):
+    t.fillcolor('yellow')
+    t.begin_fill()
+    t.color('yellow')
+    t.up()
+    t.setposition(x,y)
+    t.down()
+    t.forward(a)
+    t.right(90)
+    t.forward(b)
+    t.right(45)
+    t.forward(b)
+    t.right(45)
+    t.end_fill()
