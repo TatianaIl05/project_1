@@ -44,4 +44,13 @@ def star(x, y, a):
         t.forward(a)
         t.right(144)
     t.end_fill()
+def round(x, y, r, c):
+    t.fillcolor(c)
+    t.begin_fill()
+    t.color('blue')
+    t.up()
+    t.setposition(x,y)
+    t.down()
+    t.circle(r)
+    t.end_fill()
 
