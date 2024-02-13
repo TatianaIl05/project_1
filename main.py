@@ -68,11 +68,11 @@ def triangle(x, y, b):
     t.setposition(x, y)
     t.down()
     t.forward(b)
-    t.right(45)
-    t.forward(b)
-    t.right(45)
-    t.forward(b*math.sqrt(2))
     t.right(90)
+    t.forward(b)
+    t.right(135)
+    t.forward(b*math.sqrt(2))
+    t.right(135)
     t.end_fill()
 
 
@@ -104,3 +104,6 @@ def trapeze(x, y, a, h):
         t.forward(h * (2 ** (1/2)))
         t.right(45)
         t.end_fill()
+
+
+
