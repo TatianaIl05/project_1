@@ -1,5 +1,4 @@
 import turtle as t
-import math
 def rhombus(x, y, a):
     t.fillcolor('green')
     t.begin_fill()
@@ -57,18 +56,20 @@ def square(x,y,a):
         t.left(90)
     t.end_fill()
 def triangle(x,y,b):
+    import math
+    from math import sqrt
     t.fillcolor('yellow')
     t.begin_fill()
     t.color('yellow')
     t.up()
     t.setposition(x,y)
     t.down()
-    t.forward(b*sqrt(2))
+    t.forward(b)
+    t.right(45)
+    t.forward(b)
+    t.right(45)
+    t.forward(b*math.sqrt(2))
     t.right(90)
-    t.forward(b)
-    t.right(45)
-    t.forward(b)
-    t.right(45)
     t.end_fill()
 def round(x, y, r, c):
     t.fillcolor(c)
